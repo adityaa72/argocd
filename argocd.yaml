@@ -6,11 +6,11 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/LondheShubham153/argocd-demos.git    # Replace it with your forked repo
+    repoURL: https://github.com/adityaa72/argocd.git
     targetRevision: main
-    path: declarative_approach/online_shop
+    path: . 
   destination:
-    server: https://kubernetes.default.svc   # Replace with your Cluster Url, To get run: `argocd cluster list`
+    server: https://kubernetes.default.svc  
     namespace: argocd 
   syncPolicy:
     automated:
